@@ -1,7 +1,7 @@
 # Add Monit configuration file via the `monitrc` definition
 #
 begin
-  monitrc "elasticsearch" do
+  monit_monitrc "elasticsearch" do
     template_cookbook "elasticsearch"
     template_source   "elasticsearch.monitrc.conf.erb"
     source            "elasticsearch.monitrc.conf.erb"
